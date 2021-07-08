@@ -1,0 +1,244 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/* Body styling */
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#navbar::before{
+    top: 0;
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+/* Navbar Logo and image */
+#logo{
+
+}
+#logo img{
+    height: 39px;
+    margin: 20px 31px;
+    width: 50px;
+}
+
+/* Navbar List styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    font-size: 20px;
+}
+#navbar ul li a{
+    color:white;
+    padding: 3px 22px;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    top: 0;
+    content: "";
+    background:url("home.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    padding: 50px;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 20px;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* Services Container */
+#services
+{
+    display: flex;
+    margin: 35px;
+}
+#services::before{
+    left: 0;
+    content: "";
+    background:url("img6.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#services .box{
+    background-color: rgb(231, 224, 224);
+    margin:  0px 25px;
+    padding: 10px;
+    border: 2px solid brown;
+    border-radius: 23px;
+}
+#services img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+#services
+
+/* Clients Section */
+
+#clients-section{
+    position: relative;
+    height: 350px;
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url("img2.jpeg") no-repeat center center/cover;
+    height: 220px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    clear: both;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 125px;
+    padding: 10px 50px;
+}
+
+/* Contact Section */
+#contact{
+    position: relative
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("img5.jpg") no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+    border-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-box form,
+#ontact-box label{
+    width: 40%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 10px 30px;
+}
+
+
+@media screen and (max-width: 1280px){
+    
+    /* Navbar */
+    #navbar{
+        flex-direction: column;
+    }
+    #home{
+        height: 280px;
+
+    }
+    #home::before{
+        height: 370px;
+    }
+    #home p{
+        font-size: 20px;
+    }
+    #services{
+        flex-direction: column;
+
+    }
+    #clients{
+        overflow: hidden;
+    }
+    #contact{
+
+    }
+    footer{
+
+    }
+    .h-primary{
+        font-size: 20px;
+    }
+}
+/* Utility classes */
+.h-primary{
+    font-size: 40px;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.h-secondary{
+    font-size: 15px;
+    padding: 15px;
+}
+.center{
+    text-align: center;
+}
