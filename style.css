@@ -242,3 +242,101 @@ footer{
 .center{
     text-align: center;
 }
+.img1{
+    width: 50%;
+    height: 400px;
+}
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .blog{
+      background-color: aqua;
+      height: 600px;
+      margin: 30px 0;
+  }
+  .blog-row{
+      height: 300px;
+
+  }
+  .blog img{
+      height: 200px;
+  }
+  .map-column1{
+      display: flex;
+  }
+  .map-column1 img{
+      width: 50%;
+  }
+  #newsletter{
+      margin: 30px 0;
+  }
+  .contai{
+    background: url(img3.webp) no-repeat center center/cover;
+    padding: 100px 40px;
+    color: white;
+  }
+  .contai p{
+      max-width: 600px;
+      margin: 40px auto;
+      font-size: 15px;
+      font-weight: 300;
+  }
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.email-box i{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+.tbox,.btn1{
+    border: none;
+    outline: none;
+}
+.tbox{
+    width:0px;
+    transition: 0.6s;
+}
+.email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+.btn1{
+    background: #2f3542;
+    color:white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
