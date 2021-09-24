@@ -1,6 +1,6 @@
 Mentor : Devanshi Mishra
 
-Topic : FFood Website
+Topic : Food Website
 
 Tech Stcak Used : HTML CSS JAVASCRIPT
 
