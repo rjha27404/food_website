@@ -1,6 +1,6 @@
 Mentor : Devanshi Mishra
 
-Topic : Flight Fare Prediction
+Topic : FFood Website
 
 Tech Stcak Used : HTML CSS JAVASCRIPT
 
