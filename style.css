@@ -51,6 +51,7 @@
 #navbar ul li a:hover{
     color: black;
     background-color: white;
+    font-size: 22px;
 }
 
 /* Home Section */
