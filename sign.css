@@ -162,6 +162,7 @@ button.social-signin.google {
 }
 .sign{
     transition: transform 2s;
+    
 }
 .sign:hover{
     transform: rotate(360deg);
