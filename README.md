@@ -1,4 +1,3 @@
-Mentor : Devanshi Mishra
 
 Topic : Food Website
 
